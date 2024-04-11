@@ -54,9 +54,9 @@ public class Juego {
     this.rondaActual = rondaActual;
   }
 
-  public static Juego getInstance(){
+  public static Juego getInstance(Juego instance){
     if (instance == null){
-      instance = new Juego();
+      instance = new Juego(numeroPropuesto, numeroAdivinar, intentosMAx, puntuacion, fallos, alias, contadorIntentos, rondaPartida, rondaActual);
     }
     return instance;
   }
